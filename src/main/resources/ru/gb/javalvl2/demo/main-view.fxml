@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.chart.BarChart?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="ru.gb.javalvl2.demo.Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <TextArea fx:id="messageWindow" editable="false" VBox.vgrow="ALWAYS"/>
+    <HBox spacing="20">
+        <TextField fx:id="userWrite" HBox.hgrow="ALWAYS"/>
+        <Button text="Check" defaultButton="true" onAction="#clickCheckButton"/>
+    </HBox>
+</VBox>
